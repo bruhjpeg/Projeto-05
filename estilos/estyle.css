@@ -1,0 +1,22 @@
+/* font-family: 'Epilogue', sans-serif; */
+
+:root {
+  /* fonte */
+  --ff-fonte: 'Epilogue', sans-serif;
+  /* cores */
+
+  --bg-primary: #28293E;
+  --fc-primary: #ffffff;
+  --fc-secondary: #BBB3E6;
+}
+
+body {
+  font-family: var(--ff-fonte);
+  background: var(--bg-primary);
+  color: var(--fc-primary);
+}
+
+header P {
+  color: var(--fc-secondary);
+  text-transform: uppercase;
+}
