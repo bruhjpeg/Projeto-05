@@ -4,19 +4,27 @@
   /* fonte */
   --ff-fonte: 'Epilogue', sans-serif;
   /* cores */
-  --hue:250;
+  --hue: 250;
   --bg-primary: hsl(var(--hue), 22%, 20%);
   --fc-primary: hsl(var(--hue), 0%, 100%);
   --fc-secondary: hsl(var(--hue), 50%, 80%);
+
+}
+
+*{
+  font-size: 62.5%;
 }
 
 body {
   font-family: var(--ff-fonte);
   background: var(--bg-primary);
   color: var(--fc-primary);
+  font-size: 4rem;
 }
 
 header P {
-  color: var(--fc-secondary);
+  
   text-transform: uppercase;
+
+  color: var(--fc-secondary);
 }
