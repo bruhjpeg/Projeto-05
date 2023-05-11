@@ -80,10 +80,9 @@ main {
   object-fit: cover;
 
   border-radius: 6px;
-  
+
   transition: transform 0.2s;
   transition: opacity 1s;
- 
 }
 
 .card img:hover {
@@ -120,4 +119,36 @@ main {
 
   height: 3.8rem;
   width: fit-content;
+}
+
+header {
+  animation: topdown 1s;
+}
+
+main {
+ animation: downtop 1s 700ms backwards;
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+ 0% {
+  opacity: 0;
+  transform: translateY(15px);
+ }
+
+ 100% {
+  opacity: 1;
+  transform: translateY(0);
+ }
 }
